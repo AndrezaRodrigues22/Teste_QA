@@ -1,0 +1,36 @@
+Reportando BUG
+Titulo: Botão "Delete" não exclui o usuario corretamente
+
+Descrição:
+Quando o administrador clica no botão "Delete" na lista de usuários, o sistema exibe uma mensagem de sucesso, mas o usuário não é removido da lista.
+
+Cenário de Teste Afetado:
+Feature: Botão "Delete"
+Scenario: Botão "Delete" não executa corretamente
+
+Ambiente de teste: 
+
+Ambiente: QA
+URL: http://localhost:5400/
+
+Steps para Reproduzir o Bug:
+1.Acesse o sistema com a URL http://localhost:5400/.
+2.Verifique que está na página do sistema de contato seguro.
+3.Na lista de usuários, encontre o usuário qualquer.
+4.Clique no botão "Delete" na linha do usuário.
+
+Comportamento Observado:
+Ao clicar no botão "Delete", a mensagem "Usuário deletado com sucesso" é exibida.
+O usuário continua presente na lista de usuários, indicando que a ação de deletar não foi concluída corretamente.
+
+Comportamento Esperado:
+Ao clicar no botão "Delete", a mensagem "Usuário deletado com sucesso" deve ser exibida.
+O usuário deve ser removido da lista de usuários.
+
+Evidências:
+Imagem 1.3
+
+Prioridade: Alta
+
+Gravidade: Média
+

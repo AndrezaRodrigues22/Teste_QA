@@ -1,0 +1,33 @@
+BUG
+Titulo: Duplicação de usuário sendo permitido salvar
+
+Descrição:
+Ao tentar duplicar um usuário existente na plataforma, o sistema permite a criação de um novo usuário com os mesmos dados do usuário original, ao invés de exibir uma mensagem de erro indicando que o usuário já existe.
+
+Cenario de teste afetado:
+Feature: Criar Usuario
+Scenario: Permitindo duplicar e "Salvar" 
+ 
+Ambiente de teste: 
+
+Ambiente: QA
+URL: http://localhost:5400/
+
+Steps:
+1.Acesse o sistema contato seguro.
+2.Clique no botão "+Novo Usuario"
+3.Preencha os campos com dados já existente na lista de usuarios.
+4.Clique no botão "Salvar".
+
+Comportamento Ocorrencia:
+Um novo usuário é criado com os mesmos dados do usuário original, resultando em duplicação indesejada de dados na plataforma.
+
+Resultado Esperado:
+
+O sistema deve exibir uma mensagem de alerta informando que o usuário já existe e não deve permitir a criação de um novo usuário com os mesmos dados.
+
+Prioridade: Alta
+
+Gravidade: Média
+
+Evidencia: Imagem 1.4

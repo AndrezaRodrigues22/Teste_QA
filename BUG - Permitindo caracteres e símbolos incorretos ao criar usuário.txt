@@ -1,0 +1,33 @@
+Título do Bug: Permitindo caracteres e símbolos incorretos ao criar usuário
+
+Descrição:
+Ao tentar criar um novo usuário na plataforma, o sistema permite a inserção de caracteres especiais e símbolos nos campos de nome de usuário e outros campos, o que não deveria ser permitido conforme as políticas de segurança e validação.
+
+Cenario afetado de teste:
+Feature: Criação de Usuario
+Scenario: Criando usuario com simbolos e caracteres especiais
+
+Ambiente de Teste: QA 
+
+Passos para Reproduzir:
+
+1.Acesse a página de criação de novo usuário na plataforma.
+2.Insira um nome de usuário contendo caracteres especiais como "@#user!".
+3.Preencha os demais campos obrigatórios com caracteres especiais.
+4.Clique em "salvar".
+
+Comportamento Observado:
+
+Após tentar salvar o usuário com um nome contendo caracteres especiais, o sistema permite a criação do usuário sem exibir mensagens de erro.
+O nome de usuário com caracteres especiais é aceito pelo sistema e o usuário é criado sem restrições.
+
+Resultado Esperado:
+
+O sistema deve exibir uma mensagem de erro indicando que o nome de usuário contém caracteres não permitidos.
+Não deve ser possível salvar o usuário até que o nome de usuário esteja de acordo com as regras de validação, que geralmente permitem apenas letras, números e alguns caracteres especiais específicos como ponto, underscore, etc.
+
+Evidencia: Imagem 1.5
+
+Prioridade: Alta
+
+Gravidade: Média

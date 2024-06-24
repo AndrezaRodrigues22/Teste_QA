@@ -1,0 +1,34 @@
+Reportando o Bug
+Título: Botão de Editar não executa a ação de edição de usuário
+
+Descrição:
+Durante o teste da funcionalidade de edição de usuário, foi observado que ao clicar no botão "Edit" na lista de usuários, o sistema não permite editar as informações do usuário selecionado. Esperava-se que o sistema abrisse um formulário de edição com os dados do usuário pré-preenchidos para serem atualizados.
+
+Cenário de Teste Afetado:
+
+Feature: Botão de Editar Usuário
+Scenario: Botão de Editar não executa a ação esperada.
+
+Ambiente de Teste:
+
+Ambiente: QA
+URL: http://localhost:5400/
+
+Passos para Reproduzir o Bug:
+
+1.Acesse o sitema pela URL http://localhost:5400/.
+2.Verifique que está na página do sistema de contato seguro.
+3.Na lista de usuários, clique no botão "Edit".
+4.Observe que o sistema não permite a edição do usuário.
+
+Comportamento Observado:
+O sistema não permite a edição do usuário ao clicar no botão "Edit". Nenhuma ação é realizada e o usuário não é direcionado para o formulário de edição.
+
+Comportamento Esperado:
+Ao clicar no botão "Edit" na lista de usuários, o sistema deve permitir a edição das informações do usuário, abrindo um formulário de edição com os dados do usuário pré-preenchidos.
+
+Evidencia: Imagem 1.0
+
+Prioridade: Alta
+
+Gravidade: Média

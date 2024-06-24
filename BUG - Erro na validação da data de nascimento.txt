@@ -1,0 +1,34 @@
+Reportando o Bug
+Título: Erro na validação da data de nascimento para usuários menores de 18 anos
+
+Descrição:
+Durante o teste da funcionalidade de cadastro, foi observado que o sistema permite o cadastro de usuários com menos de 18 anos de idade. O sistema deve exibir uma mensagem de erro e impedir o cadastro nesses casos.
+
+Cenário de Teste Afetado:
+
+Feature: Validação da Data de Nascimento no Cadastro de Usuário
+Scenario: Cadastro com data de nascimento menor que 18 anos
+
+Ambiente de Teste: QA - http://localhost:5400/
+
+Passos para Reproduzir o Bug:
+
+1.Acesse a página do sistema.
+2.Preencha o campo "Nome" com "Test".
+3.Preencha o campo "Email" com "test@example.com".
+4.Preencha o campo "Nascimento" com "23/06/2024".
+5.Preencha o campo "Empresa" com "Empresa1".
+6.Clique no botão "Salvar".
+
+
+Comportamento Observado:
+O sistema permite o cadastro de usuários com menos de 18 anos sem exibir a mensagem de erro.
+
+Comportamento Esperado:
+O sistema nao deve cadastrar um usuário com data de nascimento que resultasse em uma idade menor que 18 anos, o sistema exibisse a mensagem de erro ou bloquear esta ação.
+
+Evidencia: Imagem 1.2
+
+Prioridade: Alta
+
+Gravidade: Média

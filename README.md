@@ -4,3 +4,4 @@ Teste técnico QA
 - Reporte de Bug
 - Melhorias
 - Teste Automatizados E2E
+- Teste API parcial
